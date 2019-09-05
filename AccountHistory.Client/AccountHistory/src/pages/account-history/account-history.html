@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Account History</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="balance-container">
+    <span>Current Balance: {{currentBalance}}</span>
+
+    <ion-select [(ngModel)]="selectedMonth" (ionChange)="getTransactionsByMonth()">
+      <ion-option *ngFor="let month of months" [value]="month.id">{{month.name}}</ion-option>
+    </ion-select>
+  </div>
+
+</ion-content>

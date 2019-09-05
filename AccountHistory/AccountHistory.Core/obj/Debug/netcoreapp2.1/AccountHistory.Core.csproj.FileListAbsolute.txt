@@ -1,0 +1,9 @@
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\bin\Debug\netcoreapp2.1\AccountHistory.Core.deps.json
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\bin\Debug\netcoreapp2.1\AccountHistory.Core.dll
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\bin\Debug\netcoreapp2.1\AccountHistory.Core.pdb
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\obj\Debug\netcoreapp2.1\AccountHistory.Core.csprojAssemblyReference.cache
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\obj\Debug\netcoreapp2.1\AccountHistory.Core.csproj.CoreCompileInputs.cache
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\obj\Debug\netcoreapp2.1\AccountHistory.Core.AssemblyInfoInputs.cache
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\obj\Debug\netcoreapp2.1\AccountHistory.Core.AssemblyInfo.cs
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\obj\Debug\netcoreapp2.1\AccountHistory.Core.dll
+D:\Work\Demos and Tests\AccountHistory\AccountHistory.Core\obj\Debug\netcoreapp2.1\AccountHistory.Core.pdb

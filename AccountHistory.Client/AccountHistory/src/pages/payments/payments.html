@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Payments</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="payment-container">
+    <div class="form">
+      <ion-label class="amount-label">Amount</ion-label>
+      <ion-input class="amount" [(ngModel)]="amount"></ion-input>
+      <ion-label class="description-label">Description</ion-label>
+      <ion-textarea class="description" rows="10" [(ngModel)]="description"></ion-textarea>
+    </div>
+    <div class="buttons">
+      <button class="operation-button" (click)="onBuyButtonPress()">BUY</button>
+      <button class="operation-button" (click)="onCreditButtonPress()">CREDIT</button>
+    </div>
+  </div>
+</ion-content>

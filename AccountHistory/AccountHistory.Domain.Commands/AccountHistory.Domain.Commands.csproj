@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="EnterpriseLibrary.Common" Version="6.0.1304" />
+    <PackageReference Include="Guard" Version="1.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountHistory.Common.Domain\AccountHistory.Common.Domain.csproj" />
+    <ProjectReference Include="..\AccountHistory.Core\AccountHistory.Core.csproj" />
+    <ProjectReference Include="..\AccountHistory.DataAccess\AccountHistory.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

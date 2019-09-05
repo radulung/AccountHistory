@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Menu</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <span class="card" (click)="navigateToAccountHistory()">
+    <span [ngClass]="{ 'disabled-color': !isProductionEnabled }" class="card-title">Account History</span>
+  </span>
+
+  <span class="card" (click)="navigateToPayments()">
+    <span [ngClass]="{ 'disabled-color': !isStockEnabled }" class="card-title">Payments</span>
+  </span>
+</ion-content>
