@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { API_URL } from '../../constants/constants';
+import { AccountHistoryApiService } from '../../services/account-history-api.service';
 
 @Component({
   selector: 'page-payments',
@@ -11,15 +10,11 @@ export class PaymentsPage {
   public amount: number;
   public description: string;
 
-  constructor(private http: HttpClient) {
-  }
-
-  public ionViewDidLoad() {
-    console.log('ionViewDidLoad PaymentsPage');
+  constructor(private accountHistoryApiService: AccountHistoryApiService) {
   }
 
   public onBuyButtonPress() {
-    this.http.post(`${API_URL}api/accountHistory/debit`, { amount: this.amount })
+    this.accountHistoryApiService.debit(this.amount)
       .subscribe(data => {
         console.log('Debit success');
         this.amount = 0;
@@ -30,7 +25,7 @@ export class PaymentsPage {
   }
 
   public onCreditButtonPress() {
-    this.http.post(`${API_URL}api/accountHistory/credit`, { amount: this.amount })
+    this.accountHistoryApiService.credit(this.amount)
       .subscribe(data => {
         console.log('Credit success');
         this.amount = 0;
@@ -39,5 +34,4 @@ export class PaymentsPage {
         console.log(error);
       });
   }
-
 }

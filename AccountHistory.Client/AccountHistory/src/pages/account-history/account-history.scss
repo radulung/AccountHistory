@@ -9,4 +9,18 @@ page-account-history {
         border: 1px solid black;
         width: 200px;
     }
+
+    table, tr, td {
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    table {
+        margin: 30px;
+    }
+
+    .header > td {
+        font-size: 16px;
+        font-weight: 800;
+    }
 }

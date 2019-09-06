@@ -8,6 +8,7 @@ import { AccountHistoryPage } from '../pages/account-history/account-history';
 import { PaymentsPage } from '../pages/payments/payments';
 import { MenuPage } from '../pages/menu/menu';
 import { HttpClientModule } from '@angular/common/http';
+import { AccountHistoryApiService } from '../services/account-history-api.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    AccountHistoryApiService
   ]
 })
 export class AppModule { }
