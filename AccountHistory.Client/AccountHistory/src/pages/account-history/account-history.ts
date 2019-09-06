@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { API_URL } from '../../constants/constants';
-import { MonthModel } from '../../models/month.model';
+import { AccountHistoryApiService } from '../../services/account-history-api.service';
+import { TransactionDto } from '../../dtos/transaction.dto';
 
 @Component({
   selector: 'page-account-history',
@@ -25,8 +24,9 @@ export class AccountHistoryPage {
     { id: 11, name: 'November' },
     { id: 12, name: 'December' }
   ];
+  public transactions: TransactionDto[];
 
-  constructor(private http: HttpClient) {
+  constructor(private accountHistoryApiService: AccountHistoryApiService) {
   }
 
   public ionViewWillEnter() {
@@ -38,18 +38,18 @@ export class AccountHistoryPage {
   }
 
   private getCurrentBalance(): void {
-    this.http.get(`${API_URL}api/accountHistory/currentBalance`)
-      .subscribe((data: number) => {
-        this.currentBalance = data;
+    this.accountHistoryApiService.getCurrentBalance()
+      .subscribe((currentBalance: number) => {
+        this.currentBalance = currentBalance;
       }, error => {
         console.log(error);
       });
   }
 
   public getTransactionsByMonth(): void {
-    this.http.get(`${API_URL}api/accountHistory/month/${this.selectedMonth}`)
-      .subscribe((data) => {
-        console.log(data);
+    this.accountHistoryApiService.getTransactionsByMonth(this.selectedMonth)
+      .subscribe((transactions: TransactionDto[]) => {
+        this.transactions = transactions;
       }, error => {
         console.log(error);
       });
