@@ -9,6 +9,7 @@ import { PaymentsPage } from '../pages/payments/payments';
 import { MenuPage } from '../pages/menu/menu';
 import { HttpClientModule } from '@angular/common/http';
 import { AccountHistoryApiService } from '../services/account-history-api.service';
+import { NotificationService } from '../services/notification.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AccountHistoryApiService } from '../services/account-history-api.servic
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    AccountHistoryApiService
+    AccountHistoryApiService,
+    NotificationService
   ]
 })
 export class AppModule { }

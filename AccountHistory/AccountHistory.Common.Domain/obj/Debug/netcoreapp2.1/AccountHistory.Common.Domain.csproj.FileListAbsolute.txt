@@ -10,3 +10,15 @@ D:\Work\Demos and Tests\AccountHistory\AccountHistory.Common.Domain\obj\Debug\ne
 D:\Work\Demos and Tests\AccountHistory\AccountHistory.Common.Domain\bin\Debug\netcoreapp2.1\AccountHistory.Core.dll
 D:\Work\Demos and Tests\AccountHistory\AccountHistory.Common.Domain\bin\Debug\netcoreapp2.1\AccountHistory.Core.pdb
 D:\Work\Demos and Tests\AccountHistory\AccountHistory.Common.Domain\obj\Debug\netcoreapp2.1\AccountHistory.Common.Domain.csproj.CopyComplete
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\bin\Debug\netcoreapp2.1\AccountHistory.Common.Domain.deps.json
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\bin\Debug\netcoreapp2.1\AccountHistory.Common.Domain.dll
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\bin\Debug\netcoreapp2.1\AccountHistory.Common.Domain.pdb
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\bin\Debug\netcoreapp2.1\AccountHistory.Core.dll
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\bin\Debug\netcoreapp2.1\AccountHistory.Core.pdb
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\obj\Debug\netcoreapp2.1\AccountHistory.Common.Domain.csprojAssemblyReference.cache
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\obj\Debug\netcoreapp2.1\AccountHistory.Common.Domain.csproj.CoreCompileInputs.cache
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\obj\Debug\netcoreapp2.1\AccountHistory.Common.Domain.AssemblyInfoInputs.cache
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\obj\Debug\netcoreapp2.1\AccountHistory.Common.Domain.AssemblyInfo.cs
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\obj\Debug\netcoreapp2.1\AccountHistory.Common.Domain.csproj.CopyComplete
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\obj\Debug\netcoreapp2.1\AccountHistory.Common.Domain.dll
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.Common.Domain\obj\Debug\netcoreapp2.1\AccountHistory.Common.Domain.pdb

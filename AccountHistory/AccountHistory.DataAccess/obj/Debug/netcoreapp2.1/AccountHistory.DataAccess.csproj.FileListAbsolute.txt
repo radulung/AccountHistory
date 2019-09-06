@@ -7,3 +7,12 @@ D:\Work\Demos and Tests\AccountHistory\AccountHistory.DataAccess\obj\Debug\netco
 D:\Work\Demos and Tests\AccountHistory\AccountHistory.DataAccess\bin\Debug\netcoreapp2.1\AccountHistory.DataAccess.pdb
 D:\Work\Demos and Tests\AccountHistory\AccountHistory.DataAccess\obj\Debug\netcoreapp2.1\AccountHistory.DataAccess.dll
 D:\Work\Demos and Tests\AccountHistory\AccountHistory.DataAccess\obj\Debug\netcoreapp2.1\AccountHistory.DataAccess.pdb
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\bin\Debug\netcoreapp2.1\AccountHistory.DataAccess.deps.json
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\bin\Debug\netcoreapp2.1\AccountHistory.DataAccess.dll
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\bin\Debug\netcoreapp2.1\AccountHistory.DataAccess.pdb
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\obj\Debug\netcoreapp2.1\AccountHistory.DataAccess.csprojAssemblyReference.cache
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\obj\Debug\netcoreapp2.1\AccountHistory.DataAccess.csproj.CoreCompileInputs.cache
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\obj\Debug\netcoreapp2.1\AccountHistory.DataAccess.AssemblyInfoInputs.cache
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\obj\Debug\netcoreapp2.1\AccountHistory.DataAccess.AssemblyInfo.cs
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\obj\Debug\netcoreapp2.1\AccountHistory.DataAccess.dll
+D:\Work\Demos and Tests\AccountHistoryRepo\AccountHistory\AccountHistory.DataAccess\obj\Debug\netcoreapp2.1\AccountHistory.DataAccess.pdb

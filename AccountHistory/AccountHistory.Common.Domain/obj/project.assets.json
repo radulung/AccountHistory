@@ -710,11 +710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Common.Domain\\AccountHistory.Common.Domain.csproj",
+      "projectUniqueName": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Common.Domain\\AccountHistory.Common.Domain.csproj",
       "projectName": "AccountHistory.Common.Domain",
-      "projectPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Common.Domain\\AccountHistory.Common.Domain.csproj",
+      "projectPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Common.Domain\\AccountHistory.Common.Domain.csproj",
       "packagesPath": "C:\\Users\\radulu\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Common.Domain\\obj\\",
+      "outputPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Common.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -733,8 +733,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Core\\AccountHistory.Core.csproj": {
-              "projectPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Core\\AccountHistory.Core.csproj"
+            "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Core\\AccountHistory.Core.csproj": {
+              "projectPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Core\\AccountHistory.Core.csproj"
             }
           }
         }

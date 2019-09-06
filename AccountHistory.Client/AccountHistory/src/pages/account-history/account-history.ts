@@ -27,6 +27,7 @@ export class AccountHistoryPage {
   public transactions: TransactionDto[];
 
   constructor(private accountHistoryApiService: AccountHistoryApiService) {
+    console.log('create page');
   }
 
   public ionViewWillEnter() {

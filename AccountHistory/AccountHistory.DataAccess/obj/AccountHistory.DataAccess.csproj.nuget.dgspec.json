@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.DataAccess\\AccountHistory.DataAccess.csproj": {}
+    "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.DataAccess\\AccountHistory.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.DataAccess\\AccountHistory.DataAccess.csproj": {
+    "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.DataAccess\\AccountHistory.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.DataAccess\\AccountHistory.DataAccess.csproj",
+        "projectUniqueName": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.DataAccess\\AccountHistory.DataAccess.csproj",
         "projectName": "AccountHistory.DataAccess",
-        "projectPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.DataAccess\\AccountHistory.DataAccess.csproj",
+        "projectPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.DataAccess\\AccountHistory.DataAccess.csproj",
         "packagesPath": "C:\\Users\\radulu\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.DataAccess\\obj\\",
+        "outputPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

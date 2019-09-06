@@ -12001,11 +12001,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory\\AccountHistory.Api.csproj",
+      "projectUniqueName": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory\\AccountHistory.Api.csproj",
       "projectName": "AccountHistory.Api",
-      "projectPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory\\AccountHistory.Api.csproj",
+      "projectPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory\\AccountHistory.Api.csproj",
       "packagesPath": "C:\\Users\\radulu\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory\\obj\\",
+      "outputPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12024,14 +12024,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Common.Domain\\AccountHistory.Common.Domain.csproj": {
-              "projectPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Common.Domain\\AccountHistory.Common.Domain.csproj"
+            "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Common.Domain\\AccountHistory.Common.Domain.csproj": {
+              "projectPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Common.Domain\\AccountHistory.Common.Domain.csproj"
             },
-            "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Domain.Commands\\AccountHistory.Domain.Commands.csproj": {
-              "projectPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Domain.Commands\\AccountHistory.Domain.Commands.csproj"
+            "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Domain.Commands\\AccountHistory.Domain.Commands.csproj": {
+              "projectPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Domain.Commands\\AccountHistory.Domain.Commands.csproj"
             },
-            "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Domain.Retriever\\AccountHistory.Domain.Retriever.csproj": {
-              "projectPath": "D:\\Work\\Demos and Tests\\AccountHistory\\AccountHistory.Domain.Retriever\\AccountHistory.Domain.Retriever.csproj"
+            "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Domain.Retriever\\AccountHistory.Domain.Retriever.csproj": {
+              "projectPath": "D:\\Work\\Demos and Tests\\AccountHistoryRepo\\AccountHistory\\AccountHistory.Domain.Retriever\\AccountHistory.Domain.Retriever.csproj"
             }
           }
         }
