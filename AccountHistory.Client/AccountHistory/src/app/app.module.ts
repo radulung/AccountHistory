@@ -38,4 +38,6 @@ import { NotificationService } from '../services/notification.service';
     NotificationService
   ]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private notificationService: NotificationService) { }
+}

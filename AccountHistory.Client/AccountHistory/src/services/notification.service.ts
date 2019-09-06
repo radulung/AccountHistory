@@ -10,6 +10,7 @@ export class NotificationService {
 
     constructor(private toastCtrl: ToastController) {
         this.startNotificationListener();
+        console.log('service instantiated');
     }
 
     private startNotificationListener(): void {

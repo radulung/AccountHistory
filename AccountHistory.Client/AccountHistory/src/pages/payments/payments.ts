@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AccountHistoryApiService } from '../../services/account-history-api.service';
-import { NotificationService } from '../../services/notification.service';
 
 @Component({
   selector: 'page-payments',
@@ -11,8 +10,7 @@ export class PaymentsPage {
   public amount: number;
   public description: string;
 
-  constructor(private accountHistoryApiService: AccountHistoryApiService,
-    private notificationService: NotificationService) {
+  constructor(private accountHistoryApiService: AccountHistoryApiService) {
     console.log('create page');
   }
 
