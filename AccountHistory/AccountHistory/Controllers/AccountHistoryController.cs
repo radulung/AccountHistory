@@ -1,10 +1,12 @@
-﻿using AccountHistory.Common.Domain.Dtos;
+﻿using AccountHistory.Api.SignalR;
+using AccountHistory.Common.Domain.Dtos;
 using AccountHistory.Common.Domain.Enums;
 using AccountHistory.Core.Exceptions;
 using AccountHistory.Domain.Commands.Handler;
 using AccountHistory.Domain.Commands.InputOptions;
 using AccountHistory.Domain.Retriever.Retrievers;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -18,16 +20,19 @@ namespace AccountHistory.Api.Controllers
         private readonly AddDebitTransactionCommandHandler _addDebitTransactionCommandHandler;
         private readonly TransactionsRetriever _transactionsRetriever;
         private readonly CurrentBalanceRetriever _currentBalanceRetriever;
+        private readonly IHubContext<NotifyHub, ITypedHubClient> _hubContext;
 
         public AccountHistoryController(AddCreditTransactionCommandHandler addCreditTransactionCommandHandler,
             AddDebitTransactionCommandHandler addDebitTransactionCommandHandler,
             TransactionsRetriever transactionsRetriever,
-            CurrentBalanceRetriever currentBalanceRetriever)
+            CurrentBalanceRetriever currentBalanceRetriever,
+            IHubContext<NotifyHub, ITypedHubClient> hubContext)
         {
             _addCreditTransactionCommandHandler = addCreditTransactionCommandHandler;
             _addDebitTransactionCommandHandler = addDebitTransactionCommandHandler;
             _transactionsRetriever = transactionsRetriever;
             _currentBalanceRetriever = currentBalanceRetriever;
+            _hubContext = hubContext;
         }
 
         // GET api/accountHistory/month
@@ -58,11 +63,18 @@ namespace AccountHistory.Api.Controllers
                 throw new WrongRequestException();
             }
 
-            return await _addCreditTransactionCommandHandler.ExecuteAsync(new AddTransactionInputOptions
+            var currentBalance = await _addCreditTransactionCommandHandler.ExecuteAsync(new AddTransactionInputOptions
             {
                 Amount = transactionDto.Amount,
                 OperationId = (int)Operations.Credit
             });
+
+            if (currentBalance < 10)
+            {
+                await _hubContext.Clients.All.BroadcastMessage("Your balance has dropped below 10!");
+            }
+
+            return currentBalance;
         }
 
         // POST api/accountHistory/debit
@@ -74,11 +86,17 @@ namespace AccountHistory.Api.Controllers
                 throw new WrongRequestException();
             }
 
-            return await _addDebitTransactionCommandHandler.ExecuteAsync(new AddTransactionInputOptions
+            var currentBalance = await _addDebitTransactionCommandHandler.ExecuteAsync(new AddTransactionInputOptions
             {
                 Amount = transactionDto.Amount,
                 OperationId = (int)Operations.Debit
             });
+
+            await _hubContext.Clients.All.BroadcastMessage($"Your account has been filled with ${transactionDto.Amount} money!");
+
+            return currentBalance;
         }
+
+
     }
 }

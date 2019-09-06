@@ -1,4 +1,5 @@
-﻿using AccountHistory.DataAccess;
+﻿using AccountHistory.Api.SignalR;
+using AccountHistory.DataAccess;
 using AccountHistory.Domain.Commands;
 using AccountHistory.Domain.Retriever;
 using Autofac;
@@ -33,8 +34,9 @@ namespace AccountHistory.Api
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddSignalR();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            
             var connection = "Data Source=RADULU-LAP\\SQLEXPRESS;Initial Catalog=AccountHistory;Integrated Security=SSPI;";
             services.AddDbContext<AccountHistoryContext>
                 (options => options.UseSqlServer(connection, builder => builder.MigrationsAssembly("AccountHistory.Api")));
@@ -64,6 +66,10 @@ namespace AccountHistory.Api
 
             app.UseHttpsRedirection();
             app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<NotifyHub>("/notify");
+            });
             app.UseMvc();
         }
     }
