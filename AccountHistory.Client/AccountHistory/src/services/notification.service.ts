@@ -14,12 +14,13 @@ export class NotificationService {
     }
 
     private startNotificationListener(): void {
-        this._hubConnection = new signalR.HubConnectionBuilder().withUrl('http://localhost:44379/notify').build();
+        this._hubConnection = new signalR.HubConnectionBuilder().withUrl('https://localhost:44379/notify').build();
         this._hubConnection
             .start()
             .then(() => console.log('Connection started!'))
             .catch(err => console.log('Error while establishing connection :('));
 
+        this._hubConnection.onclose(() => console.log('close!!!'));
         this._hubConnection.on('BroadcastMessage', (message: string) => {
             const toast = this.toastCtrl.create({
                 message: message,
@@ -30,4 +31,3 @@ export class NotificationService {
         });
     }
 }
-
